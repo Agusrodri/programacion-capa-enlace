@@ -12,10 +12,10 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Emisor {
+
     private char[] bufferEmisor= new char[8];
     char[] arregloParidadEmisor= new char[9];
     private Receptor receptor;
-
 
     public void entramado(char[] info){
         this.bufferEmisor=info;
@@ -46,6 +46,7 @@ public class Emisor {
              }
 
         }
+
         System.out.println("******************");
         System.out.println("Enviado: ");
         System.out.println(info);
@@ -64,7 +65,7 @@ public class Emisor {
 
         for(int i=0; i<arregloParidadEmisor.length; i++){
 
-            if(i<arregloParidadEmisor.length-1){
+            if(i<bufferEmisor.length){
                 if(bufferEmisor[i]=='1'){
                     contadorParidad++;
                 }
@@ -79,7 +80,6 @@ public class Emisor {
 
             }
 
-
         }
 
         System.out.println("******************");
@@ -88,6 +88,5 @@ public class Emisor {
         receptor.controlParidad(arregloParidadEmisor);
 
     }
-
 
 }

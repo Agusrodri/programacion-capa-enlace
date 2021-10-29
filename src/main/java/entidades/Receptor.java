@@ -49,7 +49,6 @@ public class Receptor {
         System.out.println(bufferReceptor);
         System.out.println("******************");
 
-
     }
 
     public void paridadReceptor(){
@@ -58,7 +57,7 @@ public class Receptor {
 
         for(int i=0; i<arregloParidadReceptor.length; i++){
 
-            if(i<arregloParidadReceptor.length-1){
+            if(i<bufferReceptor.length){
                 if(bufferReceptor[i]=='1'){
                     contadorParidad++;
                 }
@@ -73,10 +72,7 @@ public class Receptor {
 
             }
 
-
         }
-
-
 
         System.out.println("Paridad Receptor: ");
         System.out.println(arregloParidadReceptor);

@@ -10,8 +10,6 @@ public class Main {
         emisor.entramado(new char[]{'1', '1', '1', '1', '1', '1', '1','0'});
         emisor.paridadEmisor();
 
-
-
     }
 
 }

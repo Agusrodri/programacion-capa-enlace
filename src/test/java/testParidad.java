@@ -20,10 +20,8 @@ public class testParidad {
         emisor.getReceptor().paridadReceptor();
         emisor.paridadEmisor();
 
-
         Assertions.assertFalse(emisor.getReceptor().controlParidad(emisor.getArregloParidadEmisor()));
 
     }
-
-
+    
 }
