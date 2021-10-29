@@ -23,5 +23,5 @@ public class testParidad {
         Assertions.assertFalse(emisor.getReceptor().controlParidad(emisor.getArregloParidadEmisor()));
 
     }
-    
+
 }
